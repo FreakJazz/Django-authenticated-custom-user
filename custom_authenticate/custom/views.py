@@ -17,8 +17,8 @@ from .models import *
 from .serializers import *
 
 # Create your views here.
-class profilesList(generics.ListCreateAPIView):
-    queryset = Profile.objects.all()
-    serializer_class = profileSerializers
+class UserList(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializers
     #permission_classes = (IsAuthenticated,)
     #authentication_class = (TokenAuthentication,)
